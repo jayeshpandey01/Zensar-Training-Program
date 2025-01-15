@@ -56,8 +56,115 @@ variable belong to the class rather than instances of the class.
 
  */
 
+import java.util.Scanner;
+
 public class Practice_02 {
     public static void main(String[] args) {
+        int num =10, num2 = 20;
+        if (num > num2) {
+            System.out.println("num is greater than num2");
+        } else {
+            System.out.println("num is less than num2");
+            
+        }
+        // logical operators: &&, ||, !
+        // && -> and
+        // || -> or
+        // ! -> not
+        if (num > num2 && num2 > 0) {
+            System.out.println("num is greater than num2 and num2 is greater than 0");
+        } else {
+            System.out.println("num is less than num2 and num2 is less than 0");
+        }
+        if (num > num2 || num2 > 0) {
+            System.out.println("num is greater than num2 or num2 is greater than 0");
+        } else {
+            System.out.println("num is less than num2 or num2 is less than 0");
+        }
+        if (!(num > num2)) {
+            System.out.println("num is not greater than num2");
+        } else {
+            System.out.println("num is greater than num2");
+        }
+        // ternary operator
+        // variable = (condition) ? expressionTrue : expressionFalse;
+        int result = (num > num2) ? num : num2;
+        System.out.println("Result: " + result);
+        // switch case
+        int day = 3;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid day");
+                break;
+        }
+        // while loop
+        int i = 1;
+        while (i <= 5) {
+            System.out.println("Value of i: " + i);
+            i++;
+        }
+        // do-while loop
+        int j = 1;
+        do {
+            System.out.println("Value of j: " + j);
+            j++;
+        } while (j <= 5);
+        // for loop
+        for (int k = 1; k <= 5; k++) {
+            System.out.println("Value of k: " + k);
+        }
+        // break statement
+        for (int l = 1; l <= 10; l++) {
+            if (l == 5) {
+                break;
+            }
+            System.out.println("Value of l: " + l);
+        }
+        // continue statement
+        for (int m = 1; m <= 5; m++) {
+            if (m == 3) {
+                continue;
+            }
+            System.out.println("Value of m: " + m);
+        }
+        // nested loop
+        for (int n = 1; n <= 3; n++) {
+            for (int o = 1; o <= 3; o++) {
+                System.out.println("Value of n: " + n + " Value of o: " + o);
+            }
+        }
+        // infinite loop
+        // while (true) {
+        //     System.out.println("Infinite loop");
+        // }
+
+        // Scanner class
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int p = sc.nextInt();
+        System.out.println("Entered number is: " + p);
+        sc.close();
         
     }
 }
