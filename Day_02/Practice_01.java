@@ -17,11 +17,11 @@ public class Practice_01 {
          */
         System.out.println(num);
         System.out.println("value of num > num2: " + (num > num2));
-        System.out.println(num < num2);
-        System.out.println(num == num2);
-        System.out.println(num != num2);
-        System.out.println(num >= num2);
-        System.out.println(num <= num2);
+        System.out.println("value of num < num2: " + (num < num2));
+        System.out.println("value of the num == num2: "+ (num == num2));
+        System.out.println("Value of the num != num2: "+ (num != num2));
+        System.out.println("value of num >= num2: "+(num >= num2));
+        System.out.println("value of num <= num2: " + (num <= num2));
 
         int a , b;
         System.out.print("Enter a numbers: ");
@@ -30,5 +30,13 @@ public class Practice_01 {
         System.out.print("Enter b number: ");
         b = sc.nextInt();
         System.out.println("Sum of two numbers is: " + (a + b));
+        
+        // bitwise operators: &, |, ^, ~, <<, >>
+        System.out.println("Bitwise AND: " + (a & b));
+        System.out.println("Bitwise OR: " + (a | b));
+        System.out.println("Bitwise ExOR: " + (a ^ b));
+        System.out.println("Bitwise NOT: " + (~a));
+        System.out.println("Bitwise Left Shift: " + (a << 2));
+        System.out.println("Bitwise Right Shift: " + (a >> 2));
     }
 }
