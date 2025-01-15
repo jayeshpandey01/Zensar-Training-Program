@@ -76,11 +76,13 @@ public class Practice_02 {
         } else {
             System.out.println("num is less than num2 and num2 is less than 0");
         }
+        // or
         if (num > num2 || num2 > 0) {
             System.out.println("num is greater than num2 or num2 is greater than 0");
         } else {
             System.out.println("num is less than num2 or num2 is less than 0");
         }
+        // not
         if (!(num > num2)) {
             System.out.println("num is not greater than num2");
         } else {
@@ -165,6 +167,6 @@ public class Practice_02 {
         int p = sc.nextInt();
         System.out.println("Entered number is: " + p);
         sc.close();
-        
+
     }
 }
