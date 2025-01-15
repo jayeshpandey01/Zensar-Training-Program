@@ -39,6 +39,8 @@ public class Practice_01 {
         // 5 | 6 -> 111 -> 7
         // 5 ^ 6 -> 011 -> 3
         // ~5 -> 010 -> 2
+        // 5 << 2 -> 10100 -> 20
+        // 5 >> 2 -> 1 -> 1
         System.out.println("Bitwise AND: " + (a & b));
         System.out.println("Bitwise OR: " + (a | b));
         System.out.println("Bitwise ExOR: " + (a ^ b));
