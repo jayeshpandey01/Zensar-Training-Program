@@ -39,5 +39,12 @@ public class Practice_04 {
             }
             System.out.println();
         }
+
+        for (int[] row : matrix) {
+            for (int num : row) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
     }    
 }
