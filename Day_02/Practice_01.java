@@ -32,6 +32,13 @@ public class Practice_01 {
         System.out.println("Sum of two numbers is: " + (a + b));
         
         // bitwise operators: &, |, ^, ~, <<, >>
+        // how bitwise operators work?
+        // 5 -> 101
+        // 6 -> 110
+        // 5 & 6 -> 100 -> 4
+        // 5 | 6 -> 111 -> 7
+        // 5 ^ 6 -> 011 -> 3
+        // ~5 -> 010 -> 2
         System.out.println("Bitwise AND: " + (a & b));
         System.out.println("Bitwise OR: " + (a | b));
         System.out.println("Bitwise ExOR: " + (a ^ b));
