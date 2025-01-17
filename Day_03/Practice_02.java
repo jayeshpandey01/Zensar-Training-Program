@@ -39,7 +39,7 @@ class Employee {
     }
 }
 
-public class Pactice_02 {
+public class Practice_02 {
     public static void main(String[] args) {
         Employee emp = new Employee();
         emp.setEmpId(101);
